@@ -6,7 +6,7 @@ const path = require("path");
 const app = express();
 
 //this is a port where output shown on browser : http://localhost:8000/
-const port = 8000;
+const port =  process.env.Port || 8000;
 
 //import mongoose after require and export from config folder,
 const db = require("./config/mongoose");
